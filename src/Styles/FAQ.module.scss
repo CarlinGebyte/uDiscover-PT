@@ -1,0 +1,80 @@
+.faq {
+  background-color: #344983;
+  display: flex;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  .faq_accordion {
+    padding-right: 20px;
+    .chakra_accordion__item {
+      color: #fff;
+      .chakra_accordion__button {
+        padding: 15px 10px;
+        font-size: 18px;
+        font-weight: 700;
+        color: #fff;
+      }
+      .chakra_accordion__button[aria-expanded="true"] {
+        background-color: #51c994;
+        border: #51c994;
+        border-radius: 6px;
+        box-shadow: none;
+        outline: none;
+      }
+    }
+  }
+  .secondary {
+    text-align: right;
+    h2 {
+      color: #fff;
+      font-size: 48px;
+      line-height: 1;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+    span {
+      color: #f9c442;
+      font-size: 20px;
+      font-weight: 700;
+      display: block;
+      line-height: 1;
+      margin-bottom: 20px;
+    }
+    a {
+      font-weight: 600;
+      line-height: 1;
+      padding: 12px 24px;
+      color: #fff;
+      background-color: #6ae59e;
+      box-shadow: 0 6px 0 0 rgb(0 0 0 / 15%);
+      border-radius: 3px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .faq {
+    flex-direction: column;
+    .faq_accordion {
+      width: 100%;
+    }
+    .secondary {
+      text-align: center;
+      width: 100%;
+      h2 {
+        font-size: 35px;
+          width: fit-content;
+          margin: 20px auto 20px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .faq {
+    .faq_accordion {
+      width: 60%;
+    }
+  }
+  .secondary {
+      width: 40%;
+  }
+}

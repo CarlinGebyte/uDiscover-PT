@@ -1,0 +1,38 @@
+.form {
+  padding: 20px 0;
+  .form_item {
+    label {
+      font-size: 19px;
+      color: #fff;
+    }
+    input.form_item__text {
+      padding: 10px 15px;
+      border-radius: 15px;
+      border: 1px solid #cbd6e2;
+      width: 100%;
+      outline: none;
+    }
+    label {
+      a {
+        color: #3e69c5;
+      }
+    }
+    input.form_item__checkbox {
+      margin-right: 10px;
+    }
+    margin-bottom: 20px;
+  }
+  .form_button {
+    text-align: right;
+    button {
+      color: #fff;
+      background-color: #3574e3;
+      border: 1px solid #3574e3;
+      padding: 12px 24px;
+      border-radius: 15px;
+      line-height: 1;
+      cursor: pointer;
+      font-weight: 600;
+    }
+  }
+}

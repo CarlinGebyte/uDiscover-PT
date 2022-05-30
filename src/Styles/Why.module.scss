@@ -1,0 +1,84 @@
+.why {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-image: linear-gradient(180deg, #ffffff 20%, #4373cf 80%);
+  .why_header {
+    margin-bottom: 20px;
+    color: #4373cf;
+    h2 {
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
+    p {
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+  .why_cards {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    .why_cards__card {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 12px 0 rgb(49, 216, 133);
+      .why_cards__card___header {
+        width: 100%;
+        margin-bottom: 10px;
+        img {
+          margin: 0 auto;
+        }
+      }
+      h4 {
+        color: #30d77b;
+        font-size: 19px;
+        margin-bottom: 20px;
+      }
+      p {
+        font-size: 13px;
+        color: #3e63a9;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .why_cards {
+    flex-wrap: wrap;
+    .why_cards__card {
+      width: 47%;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .why_cards {
+    .why_cards__card {
+      width: 100%;
+      .why_cards__card___header {
+        width: 100%;
+        img {
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .why_cards__card {
+    width: 24%;
+    h4 {
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+    .why_cards__card___header {
+      width: 100%;
+      img {
+        width: 80%;
+      }
+    }
+  }
+}

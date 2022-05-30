@@ -1,0 +1,33 @@
+.banner {
+  padding: 20px 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  .banner_item {
+    width: 50%;
+    img {
+      width: 100%;
+    }
+    h2 {
+      margin-bottom: 20px;
+      font-size: 42px;
+      color: #00b6a2;
+    }
+    .banner_item__button {
+      font-size: 15px;
+      background-color: #f68625;
+      padding: 12px 24px;
+      color: #fff;
+      border-radius: 3px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner {
+    flex-direction: column;
+    .banner_item {
+      width: 100%;
+    }
+  }
+}

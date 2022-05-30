@@ -1,0 +1,76 @@
+.footer_container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  background-color: #344983;
+  background-image: url(https://ud.school/wp-content/uploads/2021/05/footerbg1s-1.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  .footer {
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+    .footer_second {
+      i {
+        margin-right: 10px;
+      }
+      a {
+        font-size: 16px;
+      }
+      h4 {
+        font-size: 20px;
+        font-weight: 800 !important;
+        margin-bottom: 20px;
+      }
+      .footer_second__mail {
+        margin-top: 20px;
+      }
+    }
+    .footer_third {
+      h4 {
+        font-size: 20px;
+        font-weight: 800 !important;
+        margin-bottom: 20px;
+      }
+      i {
+        color: #2a467e;
+        padding: 10px;
+        font-size: 24px;
+        border-radius: 50%;
+        background-color: #fff;
+        margin-bottom: 20px;
+      }
+      a {
+        margin-bottom: 20px;
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+      .footer_third__links {
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .footer_first,
+    .footer_second,
+    .footer_third {
+      width: 80%;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    .footer_first,
+    .footer_second,
+    .footer_third {
+      width: 30%;
+    }
+  }
+}

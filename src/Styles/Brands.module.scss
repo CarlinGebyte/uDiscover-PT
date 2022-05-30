@@ -1,0 +1,43 @@
+.brands_container {
+  background-color: #f8f8f8;
+  padding: 30px 10% 20px;
+}
+.brands {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+  img {
+    margin: 0;
+    width: 60%;
+    border-radius: 50%;
+  }
+}
+.brands_header {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 23px;
+  color: #30c290;
+  letter-spacing: 8.8px;
+  padding-top: 10px;
+  border-top: 2px solid #238ef6;
+  h2 {
+    width: min-content;
+    margin: 0 auto;
+  }
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 768px) {
+  .brands_header {
+    h2 {
+      font-size: 18px;
+      letter-spacing: 3px;
+    }
+  }
+  .brands {
+  img {
+    width: 90%;
+  }
+}
+}

@@ -1,0 +1,113 @@
+.plans {
+  color: #fff;
+  background-color: #4373cf;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  .plans_header {
+    text-align: center;
+    i {
+      font-size: 70px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 22px;
+    }
+    margin-bottom: 20px;
+  }
+  .plans_body {
+    h2 {
+      text-align: center;
+      font-size: 38px;
+    }
+    .plans_body__cards {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+      .plans_body__cards__card {
+        border: 4px solid #7ed2e6;
+        border-radius: 10px;
+        padding: 10px 20px;
+        display: flex;
+        flex-direction: column;
+        .plans_body__cards__card__header {
+          text-align: center;
+          border-bottom: 2px solid #7ed2e6;
+          padding-bottom: 20px;
+        }
+        .plans_body__cards__card__body {
+          padding-top: 20px;
+          text-align: center;
+          img {
+            margin-bottom: 10px;
+          }
+          .plans_body__cards__card__body__price {
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 10px;
+          }
+          .plans_body__cards__card__body__regular {
+            text-decoration: line-through;
+          }
+        }
+        .plans_body__cards__card__footer {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          height: 100%;
+          align-items: center;
+          div {
+            height: 100%;
+            width: 100%;
+            padding: 6px;
+            background-color: #00b6a2;
+            border-radius: 6px;
+            color: #fff;
+            margin-bottom: 20px;
+            p {
+              font-size: 13px;
+              font-weight: 700;
+            }
+          }
+          a {
+            background-color: #f68625;
+            border: 3px solid #f68625;
+            border-radius: 50px;
+            line-height: 1;
+            padding: 12px 24px;
+            color: #fff;
+            font-size: 15px;
+            &:hover {
+              background-color: transparent;
+              color: #f68625;
+              border: 3px solid #f68625;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .plans_body__cards {
+    flex-direction: column;
+    .plans_body__cards__card {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .plans_body__cards {
+    .plans_body__cards__card {
+      width: 32%;
+    }
+    .plans_body__cards__card__body__saving,
+    .plans_body__cards__card__body__regular {
+      text-align: left;
+      font-size: 16px;
+      margin-bottom: 16px;
+      min-height: 30px;
+    }
+  }
+}

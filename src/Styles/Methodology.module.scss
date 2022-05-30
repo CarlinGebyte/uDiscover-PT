@@ -1,0 +1,90 @@
+.methodology {
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #4373cf 0%, #ffffff 57%);
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  align-items: center;
+  .methodology_image {
+    padding-right: 20px;
+    width: 50%;
+    img {
+      width: 100%;
+    }
+  }
+  .methodology_text {
+    padding-left: 20px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    .methodology_text__header {
+      h2 {
+        font-size: 25px;
+        line-height: 25px;
+        span {
+          color: #2669cf;
+        }
+        color: #ffc83d;
+      }
+    }
+    .methodology_text__body {
+      h2 {
+        color: #2669cf;
+        line-height: 1;
+      }
+      p {
+        font-size: 18px;
+        font-weight: 600;
+        color: #2669cf;
+        margin-bottom: 30px;
+        margin-top: 30px;
+      }
+      a {
+        font-size: 18px;
+        font-weight: 700;
+        color: #fff;
+        padding: 12px 24px;
+        border: 1.5px solid #fff;
+        border-radius: 8px 8px 8px 8px;
+        box-shadow: 0 5px 0 0 rgb(0 0 0 / 15%);
+        background: linear-gradient(
+          9deg,
+          rgba(79, 167, 250, 1) 0%,
+          rgba(79, 227, 232, 1) 100%
+        );
+        line-height: 1;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .methodology_text__body {
+    h2 {
+      font-size: 62px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .methodology {
+    flex-direction: column;
+    .methodology_image,
+    .methodology_text {
+      padding-right: 0;
+      padding-left: 0;
+      width: 100%;
+      h2,
+      a {
+        text-align: center;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1024px) {
+  .methodology {
+    .methodology_text__body {
+      h2 {
+        font-size: 82px;
+      }
+    }
+  }
+}
